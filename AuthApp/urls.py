@@ -21,5 +21,6 @@ from asite import views
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('signup/', views.SignUp, name='signup'),
     path('admin/', admin.site.urls),
 ]
