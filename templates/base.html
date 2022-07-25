@@ -13,8 +13,10 @@
   <h1 class="text-center">ASITE</h1>
     <a href="{% url 'home' %}">Home</a> /
     {% if user.is_authenticated %}
-    <a href="{% url 'logout' %}">Log out</a> /
+    <a href="{% url 'secret_page' %}">Secret Page(Class bassed view)</a> /
+    <a href="{% url 'secret' %}">Secret</a> /
     <a href="{% url 'password_change' %}">Change Password</a> /
+    <a href="{% url 'logout' %}">Log out</a> /
       <strong>You're logged in as "{{ user.username }}"</strong>
     {% else %}
     <a href="{% url 'login' %}">Login</a> /
